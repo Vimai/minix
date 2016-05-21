@@ -26,6 +26,7 @@
 #include <assert.h>
 #include "mproc.h"
 #include "kernel/proc.h"
+#include <stdio.h>
 
 struct utsname uts_val = {
   OS_NAME,		/* system name */
@@ -429,3 +430,12 @@ int do_getrusage()
 	return sys_datacopy(SELF, (vir_bytes)&r_usage, who_e,
 		m_in.m_lc_pm_rusage.addr, (vir_bytes) sizeof(r_usage));
 }
+
+/*===========================================================================*
+ *				do_whosthere				     *
+ *===========================================================================*/
+int do_whosthere()
+{
+	prinft("Quem é?");
+}
+
