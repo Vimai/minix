@@ -437,5 +437,6 @@ int do_getrusage()
 int do_whosthere()
 {
 	prinft("Quem é?");
+	return 0;
 }
 
