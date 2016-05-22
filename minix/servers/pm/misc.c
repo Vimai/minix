@@ -434,5 +434,6 @@ int do_getrusage()
  *===========================================================================*/
  
  int do_whosthere(){
- 	printf("Quem é?");
+ 	printf("Quem é?");´
+ 	return 0;
  }
